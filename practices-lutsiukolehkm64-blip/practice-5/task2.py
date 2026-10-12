@@ -7,7 +7,7 @@ debt_history = {
     "A04": [0, 0, 0, 0],
 }
 
-total_debt = 0 # Загальна сума боргів усіх квартир
+total_debt = 0
 
 for apt in sorted(debt_history.keys()):
     history = debt_history[apt]
@@ -39,7 +39,6 @@ for apt in sorted(debt_history.keys()):
     current_debt = history[-1]
     total_debt += current_debt
     
-    # Визначаємо статус квартири
     if current_debt == 0:
         status = "PAID"
     else:
