@@ -12,3 +12,12 @@ def task1():
 
     print(" ".join(map(str, array)))
 task1
+def task2():
+    userinput = input("")
+    words = userinput.split()
+    words.reverse()
+    for i in range(len(words)):
+        if words[i].isdigit():
+            words[i] = int(words[i])*-1
+    print(words)    
+task2
