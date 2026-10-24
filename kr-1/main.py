@@ -21,3 +21,13 @@ def task2():
             words[i] = int(words[i])*-1
     print(words)    
 task2
+def task3():
+    userinput = input("")
+    dictionary = {}
+    for i in userinput:
+        if i in dictionary:
+            dictionary[i] += 1
+        else:
+            dictionary[i] = 1
+    print(list(dictionary.items()))
+task3
